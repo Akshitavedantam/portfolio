@@ -1,0 +1,46 @@
+.journey-container {
+    min-height: 100vh;
+    background-color: transparent;
+    padding: 4rem 2rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color:#c599ff;
+    text-shadow: 0 0 10px #7f00ff;
+  }
+  
+  .journey-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .journey-card {
+    border: 2px solid #9f5fff;
+    background:none;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(127, 0, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .journey-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(127, 0, 255, 0.5);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d8b4fe;
+  }
+  

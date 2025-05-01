@@ -1,0 +1,84 @@
+/* src/components/Skills.css */
+
+.skills-section {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills-title {
+    font-size: 3rem;
+    color: #c599ff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #9f5fff;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    width: 80%;
+    max-width: 1200px;
+    padding: 0 2rem;
+  }
+  
+  .skill-card {
+    background: #1a1a2e;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #9f5fff;
+    position: relative;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+  }
+  
+  .skill-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #9f5fff;
+   
+    background-size: 400% 400%;
+    z-index: -1;
+    filter: blur(10px);
+    border-radius: 12px;
+    
+  }
+  
+  .skill-card:hover {
+    box-shadow: 0 0 1px #9f5fff;
+    border-color: #9f5fff;
+    background-color:#9f5fff ;
+  }
+  
+  @keyframes glowAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .footer-note {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.75rem;
+    color: #aaa;
+    font-style: italic;
+    opacity: 0.7;
+    z-index: 1000;
+    pointer-events: none;
+  }

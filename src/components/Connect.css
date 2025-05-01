@@ -1,0 +1,231 @@
+/* src/components/Connect.css */
+
+.connect-section {
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .connect-title {
+    font-size: 3rem;
+    color: #c599ff;;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 12px #9f5fff;
+  }
+  
+  .connect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .connect-btn {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    border: 2px solid #9f5fff;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .connect-btn::before {
+    content: '';
+    position: relative;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #9f5fff, #5f9fff, #9f5fff);
+    background-size: 400% 400%;
+    z-index: -1;
+    filter: blur(10px);
+    border: 2px solid #9f5fff;
+    animation: glowAnimation 6s linear infinite;
+  }
+  
+  .connect-btn:hover {
+    background-color: rgba(159, 95, 255, 0.1);
+    box-shadow: 0 0 14px #9f5fff;
+  }
+  
+  .connect-info {
+    font-size: 1.1rem;
+    color: #cfcfff;
+  }
+  
+  .connect-link {
+    color: #9f5fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .connect-link:hover {
+    color: #ffffff;
+  }
+  
+  @keyframes glowAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .connect-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    height: 500px;
+  }
+  
+  .spline-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+  .connect-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.connect-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.girl3d-wrapper {
+  flex: 1;
+  max-width: 400px;
+  height: 400px;
+  min-width: 300px;
+  pointer-events: none; /* Prevent user interaction */
+  transform: scale(1);
+}
+
+.girl3d-wrapper canvas {
+  pointer-events: none !important; /* Prevent zoom/rotation */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .connect-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .girl3d-wrapper {
+    max-width: 100%;
+    height: 300px;
+  }
+}
+.connect-section {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  color: white;
+  display: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.connect-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.connect-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.connect-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+
+
+.connect-info {
+  font-size: 1.2rem;
+}
+
+.connect-link {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.connect-right {
+  flex: 1;
+  height: 400px;
+  max-width: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.connect-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.connect-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.connect-right {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+  position: relative;
+}
+
+.connect-right canvas {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: transparent !important;
+}
+.footer-note {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.75rem;
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.7;
+  z-index: 1000;
+  pointer-events: none;
+}
+

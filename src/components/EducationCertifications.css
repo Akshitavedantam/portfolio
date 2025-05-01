@@ -1,0 +1,103 @@
+.edu-cert-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0a10;
+  color: white;
+}
+
+/* These already center vertically & horizontally */
+.education-block,
+.certification-block {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #c599ff;
+  text-shadow: 0 0 10px #9f5fff;;
+}
+
+/* This is key: centers the row of cards */
+.edu-cards,
+.cert-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width:100%; /* Prevents overly wide rows */
+  margin: 0 auto;     /* Centers the whole group */
+}
+
+
+/* No change needed here unless you want fixed size */
+.card {
+  background-color: #1a1a2e;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #9f5fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  flex: 1 1 250px;     
+  max-width: 300px;    
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px #9f5fff;
+}
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.bubble-tooltip {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  white-space: normal;
+  width: 250px;
+  font-size: 0.9rem;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+.card-icon {
+  margin-left: 8px;
+  font-size: 1rem;
+  vertical-align: middle;
+  color: #0ff;
+  filter: drop-shadow(0 0 4px #0ff);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+  transform: scale(1.2);
+}
