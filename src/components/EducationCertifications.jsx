@@ -38,9 +38,9 @@ export default function EducationCertifications() {
               </h3>
               <p>
                 {{
-                  tenth: "CBSE Board, 2015",
-                  twelfth: "CBSE Board, 2017",
-                  btech: "Computer Science, 2021",
+                  tenth: "CBSE Board, 2020",
+                  twelfth: "CBSE Board, 2022",
+                  btech: "Computer Science, 2023-2027",
                 }[key]}
               </p>
 
